@@ -30,9 +30,9 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
                   alignment: Alignment.bottomRight,
                   padding: const EdgeInsets.all(20),
                   child: Text(
-                    "$number1 $operand $number2".isEmpty
+                    "$number1$operand$number2".isEmpty
                         ? "0"
-                        : "$number1 $operand $number2",
+                        : "$number1$operand$number2",
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 48,
@@ -171,7 +171,7 @@ class _CalculatorScreenState extends State<CalculatorScreen> {
   //clear the input
   void clearAll() {
     setState(() {
-      number1 = '';
+      number1 = '0';
       operand = '';
       number2 = '';
     });
