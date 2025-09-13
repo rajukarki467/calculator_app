@@ -36,9 +36,9 @@ class Btn {
     n1,
     n2,
     n3,
+    add,
     n0,
     dot,
-    add,
     calculate,
   ];
 }
